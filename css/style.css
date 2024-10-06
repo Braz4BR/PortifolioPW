@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-.euRedes{
+
+body {
+    background: linear-gradient(to bottom, #2196f3, #81c9fa);
+    height: auto; /* Altera para auto para melhor responsividade */
+    color: #000000;
+}
+
+.euRedes {
     text-align: center;    
     font-size: 18px;
 }
-.imagens .minhaFoto{
+
+.imagens .minhaFoto {
     top: 10px;
     position: relative;
     height: 200px;
@@ -19,53 +27,29 @@
     background-color: #5700e4;
     padding: 5px;
     margin-bottom: 10px;
-
 }
-.sobre{
-    margin: 5px;
+
+.sobre {
+    margin: 20px;
     text-align: justify;
-    font-family: "Poppins", sans-serif;
     font-size: 20px;
 }
-body {
-    background: linear-gradient(to bottom, #2196f3, #81c9fa);
-    height: 100vh;
-    justify-content: center;
-    color: #000000;
-}
-.habilidades {
+
+.habilidades, .meusProjetos {
     font-family: "Poppins", sans-serif;
     background-color: #b1c7c7;
     padding: 20px;
     text-align: center;
-    border: 1px solid #5c5c5c ;
+    border: 1px solid #5c5c5c;
+    margin: 10px;
 }
 
-.habilidades div {
+.habilidades div, .meusProjetos div {
     display: inline-block;
     margin: 10px;
 }
 
-.habilidades img {
-    vertical-align: middle;
-}
-.meusProjetos {
-    font-family: "Poppins", sans-serif;
-    background-color: #b1c7c7;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #5c5c5c ;
-}
-.meusProjetos h2{
-    margin-bottom: 10px;
-}
-
-.meusProjetos div {
-    display: inline-block;
-    margin: 10px;
-}
-
-.meusProjetos img {
+.habilidades img, .meusProjetos img {
     vertical-align: middle;
 }
 
@@ -116,4 +100,39 @@ footer {
     margin-top: 20px;
     border-top: 1px solid #444;
     padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .euRedes {
+        font-size: 16px;
+    }
+
+    .minhaFoto {
+        height: 150px;
+        width: 150px;
+    }
+
+    .sobre {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .habilidades, .meusProjetos {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .habilidades div, .meusProjetos div {
+        display: block;
+        margin: 5px 0;
+    }
+    .meusProjetos img{
+        max-width: 300px;
+        margin-top: 5px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
