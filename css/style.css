@@ -9,7 +9,7 @@
 
 body {
     background: linear-gradient(to bottom, #2196f3, #81c9fa);
-    height: auto; /* Altera para auto para melhor responsividade */
+    height: auto;
     color: #000000;
 }
 
@@ -28,31 +28,48 @@ body {
     padding: 5px;
     margin-bottom: 10px;
 }
-
 .sobre {
-    margin: 20px;
+    margin: auto;
     text-align: justify;
     font-size: 20px;
+    width: 50%;
+    padding-bottom: 20px;
 }
 
+
 .habilidades, .meusProjetos {
-    font-family: "Poppins", sans-serif;
+    width: 90%;
     background-color: #b1c7c7;
     padding: 20px;
     text-align: center;
     border: 1px solid #5c5c5c;
-    margin: 10px;
+    border-radius: 10px;
+    margin: auto;
 }
 
 .habilidades div, .meusProjetos div {
     display: inline-block;
     margin: 10px;
+    align-items: center;
+    padding: 20px;
 }
 
 .habilidades img, .meusProjetos img {
     vertical-align: middle;
 }
-
+.formacaoAcademy{
+    width: 90%;
+    background-color: #b1c7c7;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #5c5c5c;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+li{
+    list-style: none;
+}
 footer {
     background-color: #282c34;
     color: white;
@@ -115,6 +132,8 @@ footer {
     .sobre {
         font-size: 18px;
         margin: 10px;
+        width: 90%;
+        margin: auto;
     }
 
     .habilidades, .meusProjetos {
@@ -125,6 +144,9 @@ footer {
     .habilidades div, .meusProjetos div {
         display: block;
         margin: 5px 0;
+    }
+    .habilidades img{
+        max-width: 70px;
     }
     .meusProjetos img{
         max-width: 300px;
